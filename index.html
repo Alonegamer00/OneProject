@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday, Jun Lee!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .flower {
+      width: 180px;
+      height: 180px;
+      background:
+        radial-gradient(circle, #ff99cc 40%, transparent 40%),
+        radial-gradient(circle, #ff99cc 40%, transparent 40%);
+      background-position: 0 0, 90px 90px;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      animation: bloom 2s ease-out forwards;
+      transform: scale(0);
+    }
+
+    @keyframes bloom {
+      to { transform: scale(1); }
+    }
+
+    h1 {
+      color: #d63384;
+      font-size: 2.5em;
+      margin-top: 20px;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    p {
+      color: #6a1b4d;
+      font-size: 1.2em;
+      margin: 10px 20px;
+      max-width: 80%;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="flower"></div>
+  <h1>🎂 Happy Birthday, Jun Lee! 🎉</h1>
+  <p>
+    Happy birthday, dear. May you always stay happy, live for thousands of years, 
+    and may no sorrow ever come near you. God bless you. 💖
+  </p>
+</body>
+</html>
